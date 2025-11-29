@@ -104,12 +104,11 @@ INSERT INTO SanPham (TenSP, MaLoai, Gia, SoLuong, ThuongHieu, MoTa, AnhUrl) VALU
 (N'Crocs LiteRide', 3, 500000, 50, N'Crocs', N'Comfort', N'/images/literide.jpg'),
 (N'Salomon Speedcross', 1, 2200000, 5, N'Salomon', N'Giày trail', N'/images/speedcross.jpg');
 
--- Seed: 5 Users (3 khách, 2 admin)
-INSERT INTO KhachHang (Email, PasswordHash, Ten, SDT, DiaChi, IsAdmin) VALUES
-('kh1@example.com', HASHBYTES('SHA2_256','password1'), N'Nguyễn Văn A','0912345678', N'Hà Nội', 0),
-('kh2@example.com', HASHBYTES('SHA2_256','password2'), N'Trần Thị B','0933222111', N'TPHCM', 0),
-('kh3@example.com', HASHBYTES('SHA2_256','password3'), N'Lê Văn C','0987654321', N'Đà Nẵng', 0),
-('admin1@example.com', HASHBYTES('SHA2_256','adminpass1'), N'Admin One','0900111222', N'HCM', 1),
-('admin2@example.com', HASHBYTES('SHA2_256','adminpass2'), N'Admin Two','0900333444', N'HCM', 1);
 
+-- Seed: 5 Users (3 khách, 1 admin)
+INSERT INTO KhachHang (Email, PasswordHash, Ten, SDT, DiaChi, IsAdmin) VALUES
+('kh1@example.com', 0x8D969EEF6ECAD3C29A3A629280E686CF0C3F5D5A86AFF3CA12020C923ADC6C92, N'Nguyễn Văn A','0912345678', N'Hà Nội', 0),
+('kh2@example.com', 0x8D969EEF6ECAD3C29A3A629280E686CF0C3F5D5A86AFF3CA12020C923ADC6C92, N'Trần Thị B','0933222111', N'TPHCM', 0),
+('kh3@example.com', 0x8D969EEF6ECAD3C29A3A629280E686CF0C3F5D5A86AFF3CA12020C923ADC6C92, N'Lê Văn C','0987654321', N'Đà Nẵng', 0),
+('admin@shop.com',  0x8D969EEF6ECAD3C29A3A629280E686CF0C3F5D5A86AFF3CA12020C923ADC6C92, N'Admin Shop','0900111222', N'HCM', 1);
 
